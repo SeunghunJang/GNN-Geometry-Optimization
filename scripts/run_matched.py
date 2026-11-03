@@ -16,8 +16,8 @@ STAGES = ('initial','loose_t10','loose_t20','loose_t30',
           'tight_t10','tight_t20','tight_t30','final')
 RUNNERS = {
     'B3D': 'models/3dmpnn/run_3dmpnn_B_original.py',
-    'E3D': 'experiment_scripts/run_3dmpnn_E_original.py',
-    'Z3D': 'experiment_scripts/run_3dmpnn_Z.py',
+    'E3D': 'models/3dmpnn/run_3dmpnn_E_original.py',
+    'Z3D': 'models/3dmpnn/run_3dmpnn_Z.py',
     'BDim': 'models/dimenetpp/run_organic_geometry_PyG_B.py',
     'EDim': 'models/dimenetpp/run_organic_geometry_PyG_E.py',
     'ZDim': 'models/dimenetpp/run_organic_geometry_PyG_Z.py',
