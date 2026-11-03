@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite the associated manuscript when using these experimental scripts."
+type: software
+title: "GNN Geometry Optimization Benchmark: 3D-MPNN and DimeNet++"
+authors:
+  - family-names: Jang
+    given-names: Seunghun
+  - family-names: Na
+    given-names: Gyoung S.
+abstract: "Original training sources and reproducing tools for a matched eight-stage solute-solvent GNN benchmark."
+keywords:
+  - graph neural networks
+  - solvation free energy
+  - molecular geometry optimization
+
+
+# Complete only after the actual release exists and KRICT approves the license.
+# repository-code: https://github.com/REPLACE_OWNER/GNN-Geometry-Optimization
+# license: MIT
+# version: 1.0.0
+# date-released: 2026-XX-XX
+# doi: 10.5281/zenodo.REPLACE_WITH_ISSUED_DOI
+# preferred-citation: add the published article citation once available

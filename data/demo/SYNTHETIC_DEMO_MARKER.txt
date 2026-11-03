@@ -1,0 +1,2 @@
+SYNTHETIC DEMONSTRATION DATASET. NO EXPERIMENTAL TARGETS OR QUANTUM CALCULATIONS.
+Only for testing model loading, short training and file outputs.
