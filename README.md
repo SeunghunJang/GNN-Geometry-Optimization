@@ -1,4 +1,4 @@
-# Geometry Optimization and GNN Prediction of Solvation Free Energies
+# Effects of Geometry Optimization on GNN-Based Solvation Free Energy Prediction
 
 This repository contains the GNN training code associated with the manuscript:
 
