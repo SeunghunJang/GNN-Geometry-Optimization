@@ -57,7 +57,8 @@ python scripts/run_matched.py \
   --manifest /path/to/manifest.csv \
   --descriptors /path/to/descriptors.csv \
   --reference-folds /path/to/reference_outer_folds_B_E.csv \
-  --outroot run_outputs/full_experiment --dry-run
+  --outroot run_outputs/full_experiment \
+  --dry-run
 ```
 
 ## Repository contents
