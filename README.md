@@ -28,6 +28,7 @@ A small synthetic dataset is included in `data/demo/`. It contains 16 systems, 3
 The code has been tested with Python 3.11, PyTorch 2.10.0, and PyTorch Geometric 2.6.1. Install a PyTorch build appropriate for your system, then install the remaining requirements:
 
 ```bash
+# Install dependencies
 pip install -r requirements.txt
 
 # Check the example inputs without training
