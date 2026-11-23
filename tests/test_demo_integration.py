@@ -56,7 +56,7 @@ class TestDemoBundle(unittest.TestCase):
             self.assertIn('--n-folds', cmd)
             self.assertEqual(cmd[cmd.index('--n-folds') + 1], '2')
             self.assertEqual(cmd[cmd.index('--epochs') + 1], '1')
-            self.assertEqual(cmd[cmd.index('--cutoff') + 1], '5.0')
+            self.assertEqual(cmd[cmd.index('--cutoff') + 1], '4.0')
             if model.endswith('Dim'):
                 self.assertEqual(cmd[cmd.index('--reference-folds') + 1], 'none')
             if model[0] in 'EZ':
