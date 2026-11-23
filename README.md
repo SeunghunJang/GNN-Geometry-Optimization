@@ -45,22 +45,15 @@ Outputs are saved under `run_outputs/demo/`.
 
 **Note:** The example structures, descriptors, and targets are synthetic. They are intended only to verify that the code runs; they do not reproduce the results in the manuscript.
 
-## Reproducing the study
+## Running the models on your own data
 
-The full benchmark uses 435 systems at eight stages (`initial`, `loose_t10`, `loose_t20`, `loose_t30`, `tight_t10`, `tight_t20`, `tight_t30`, and `final`). Evaluation uses random five-fold cross-validation and leave-one-solvent-out validation with three random seeds.
+The research dataset (XYZ structures and experimental labels) is available on Figshare (https://doi.org/10.6084/m9.figshare.34754763). The runners in `models/` can be used with these or other data:
 
-The original XYZ structures, experimental targets, descriptor table, and reference split assignments are **not included** in this repository. They are required to reproduce the reported results.
+- **Manifest (CSV):** one row per system and geometry stage, with the columns of `data/demo/manifest.csv` (`system_id`, `stage_mode`, `input_xyz`, `target`, `solute_smiles`, `solvent_smiles`, `solvent`, `n_solvent`). In each XYZ file, the solute atoms must come first, followed by the solvent molecules; the total atom count is checked against the SMILES.
+- **Descriptor table (descriptor-fusion and zero-descriptor control only):** a CSV in the 314-column layout of `data/descriptor_columns.json`. Only columns 58–121 and 284–313 (94 descriptors, listed in Supplementary Table S6 of the article) are used as model inputs. The descriptor-calculation code is not included in this repository.
+- **Reference folds (optional):** the DimeNet++ runners accept `--reference-folds none`, in which case folds are generated from the seed.
 
-When those files are available, the full-experiment commands can be inspected without starting training:
-
-```bash
-python scripts/run_matched.py \
-  --manifest /path/to/manifest.csv \
-  --descriptors /path/to/descriptors.csv \
-  --reference-folds /path/to/reference_outer_folds_B_E.csv \
-  --outroot run_outputs/full_experiment \
-  --dry-run
-```
+The settings used in the article were a 4.0 Å cutoff, up to 600 epochs with early-stopping patience 100, batch size 16, AdamW (learning rate 1e-3, weight decay 1e-5), dropout 0.10, an inner validation fraction of 0.15, and seeds 0, 1 and 2. The runners' own defaults differ (for example, a 5.0 Å cutoff), so pass these values explicitly. `scripts/run_matched.py --dry-run` prints the exact commands used for the article. Because GPU training is not bitwise deterministic, new runs are expected to give similar, but not identical, results.
 
 ## Repository contents
 
