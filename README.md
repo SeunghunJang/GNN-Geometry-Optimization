@@ -53,7 +53,11 @@ The research dataset (XYZ structures and experimental labels) is available on Fi
 - **Descriptor table (descriptor-fusion and zero-descriptor control only):** a CSV in the 314-column layout of `data/descriptor_columns.json`. Only columns 58–121 and 284–313 (94 descriptors, listed in Supplementary Table S6 of the article) are used as model inputs. The descriptor-calculation code is not included in this repository.
 - **Reference folds (optional):** the DimeNet++ runners accept `--reference-folds none`, in which case folds are generated from the seed.
 
-The settings used in the article were a 4.0 Å cutoff, up to 600 epochs with early-stopping patience 100, batch size 16, AdamW (learning rate 1e-3, weight decay 1e-5), dropout 0.10, an inner validation fraction of 0.15, and seeds 0, 1 and 2. The runners' own defaults differ (for example, a 5.0 Å cutoff), so pass these values explicitly. `scripts/run_matched.py --dry-run` prints the exact commands used for the article. Because GPU training is not bitwise deterministic, new runs are expected to give similar, but not identical, results.
+The settings used in the article were a 4.0 Å cutoff, up to 600 epochs with early-stopping patience 100, batch size 16, AdamW (learning rate 1e-3, weight decay 1e-5), dropout 0.10, an inner validation fraction of 0.15, and seeds 0, 1 and 2. The runners' own defaults differ (for example, a 5.0 Å cutoff), so pass these values explicitly. The exact commands used for the article can be printed without starting training:
+```bash
+python scripts/run_matched.py --manifest data/demo/manifest.csv --dry-run
+```
+Because GPU training is not bitwise deterministic, new runs are expected to give similar, but not identical, results.
 
 ## Repository contents
 
