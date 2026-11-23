@@ -2,7 +2,7 @@
 
 This repository contains the GNN training code associated with the manuscript:
 
-*Is Full Geometry Optimization Always Necessary for Graph Neural Network Learning? Insights from a Multi-Stage Quantum Chemical Dataset*
+*Is Full Geometry Optimization Always Necessary for Graph Neural Network Predictions? Insights from a Multi-Stage Quantum Chemical Dataset*
 
 We investigate how the degree of molecular geometry optimization affects the prediction of experimental solvation free energies. The benchmark compares 435 solute–solvent systems at eight geometry stages, from initial to final optimized structures.
 
