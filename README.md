@@ -69,4 +69,4 @@ Because GPU training is not bitwise deterministic, new runs are expected to give
 
 ## Data and code availability
 
-The full research dataset is publicly available on Figshare at https://doi.org/10.6084/m9.figshare.34754763. It contains 29,268 XYZ structures for 557 solute–solvent systems, together with per-structure metadata, including computed energies and experimental solvation free-energy labels. The code is currently provided without a software license, pending institutional authorization. Public visibility alone does not grant permission to reuse or redistribute the code.
+The full research dataset is publicly available on Figshare at https://doi.org/10.6084/m9.figshare.34754763 under the CC BY 4.0 license. It contains 29,268 XYZ structures for 557 solute–solvent systems, together with per-structure metadata, including computed energies and experimental solvation free-energy labels. The code in this repository is released under the MIT License (see `LICENSE`).
