@@ -72,4 +72,4 @@ python scripts/run_matched.py \
 
 ## Data and code availability
 
-The full research dataset will be linked here when its release is completed. The code is currently provided without a software license, pending institutional authorization. Public visibility alone does not grant permission to reuse or redistribute the code.
+The full research dataset is publicly available on Figshare at https://doi.org/10.6084/m9.figshare.34754763. It contains 29,268 XYZ structures for 557 solute–solvent systems, together with per-structure metadata, including computed energies and experimental solvation free-energy labels. The code is currently provided without a software license, pending institutional authorization. Public visibility alone does not grant permission to reuse or redistribute the code.
