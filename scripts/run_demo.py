@@ -84,7 +84,7 @@ def make_command(model, manifest, descriptors, outdir, stage, seed, epochs):
            '--n-folds', '2', '--epochs', str(epochs), '--patience', '1',
            '--val-frac', '0.20', '--batch-size', '8',
            '--hidden-dim', '96', '--num-layers', '4', '--n-rbf', '32',
-           '--cutoff', '5.0', '--dropout', '0.10',
+           '--cutoff', '4.0', '--dropout', '0.10',
            '--lr', '0.001', '--weight-decay', '0.00001']
     if model in ('E3D', 'Z3D', 'EDim', 'ZDim'):
         cmd += ['--descriptors', str(descriptors), '--desc-hidden', '32']
