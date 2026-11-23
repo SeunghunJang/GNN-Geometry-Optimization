@@ -4,4 +4,4 @@ This folder contains 16 artificial molecular systems in 2 stages (32 XYZ files),
 
 **Do not use this data for scientific benchmarking, training-quality claims, or as experimental solvation free energies.** The only purpose is to check that the six training runners can load files, train briefly, and save outputs.
 
-The original 435-system experimental benchmark and 314-column descriptors must be obtained and redistributed separately after approval.
+The research dataset used in the article is available on Figshare: https://doi.org/10.6084/m9.figshare.34754763.
