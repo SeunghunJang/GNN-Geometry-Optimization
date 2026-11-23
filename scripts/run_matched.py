@@ -106,7 +106,7 @@ def main():
              '--n-folds','5','--epochs','600','--patience','100',
              '--val-frac','0.15','--batch-size','16',
              '--hidden-dim','96','--num-layers','4',
-             '--n-rbf','32','--cutoff','5.0','--dropout','0.10',
+             '--n-rbf','32','--cutoff','4.0','--dropout','0.10',
              '--lr','0.001','--weight-decay','0.00001']
         if model in ('E3D','Z3D','EDim','ZDim'):
             cmd.extend(['--descriptors',str(desc),'--desc-hidden','32'])
